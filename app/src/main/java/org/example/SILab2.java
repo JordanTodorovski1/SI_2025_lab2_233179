@@ -1,3 +1,4 @@
+package org.example;
 import java.util.List;
 
 class Item {
@@ -75,7 +76,6 @@ public class SILab2 {
         }
         if (cardNumber != null && cardNumber.length() == 16) {
             String allowed = "0123456789";
-            char[] chars = cardNumber.toCharArray();
             for (int j = 0; j < cardNumber.length(); j++) {
                 char c = cardNumber.charAt(j);
                 if (allowed.indexOf(c) == -1) {
